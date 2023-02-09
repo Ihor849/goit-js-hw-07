@@ -36,8 +36,6 @@ function onbrowsesClickCollection(evt) {
 `);
   viewedImg.show();
 
-  console.dir(viewedImg.show());
-
   window.addEventListener("keydown", (event) => {
     if (event.code === "Escape") {
       viewedImg.close();
