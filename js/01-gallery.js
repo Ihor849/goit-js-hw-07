@@ -14,9 +14,9 @@ function createImgCardsMarkup(galleryItems) {
     <a class="gallery__link href = ${original} onclick="evt.preventDefault()" >
       <img
         class="gallery__image"
-        src= ${preview}
-        data-source= ${original}
-        alt= ${description}
+        src= "${preview}"
+        data-source= "${original}"
+        alt= "${description}"
       />
     </a>
   </div>`;
@@ -32,7 +32,7 @@ function onbrowsesClickCollection(evt) {
   const srcOriginal = evt.target.dataset.source;
 
   const viewedImg = basicLightbox.create(`
-    <img src = ${srcOriginal}>
+    <img src = "${srcOriginal}">
 `);
   viewedImg.show();
 
